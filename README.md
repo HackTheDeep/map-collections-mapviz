@@ -21,13 +21,13 @@ Collaboration with the following teams/repos:
 
 ####  Technologies Applied  
 -  Frontend Map Stack    
-  - Mapping Libraries
-    - **Python jupyter** notebook (with *cartopy* library) for prototyping, inspecting the geographic data.
-    - **Leaflet.js**  
-    - **Mapboxgl.js**  
-    - **D3.js** for thematic mapping of collections data and information visualizations accompanying web map.
-    - Basemap (tile server)
-    - Used Mapbox vector tile service for simplicity, so that we would not have to spin up our own tile server.
+    - Mapping Libraries
+      - **Python jupyter** notebook (with *cartopy* library) for prototyping, inspecting the geographic data.
+      - **Leaflet.js**  
+      - **Mapboxgl.js**  
+      - **D3.js** for thematic mapping of collections data and information visualizations accompanying web map.
+      - Basemap (tile server)
+        - Used Mapbox vector tile service for simplicity, so that we would not have to spin up our own tile server.
 - Geospatial processing  
    - **Google Maps Geocoding API** - used for...geocoding
    - **Turf.js** (can be used in Node.js or in dynamically in the browser)  
