@@ -6,8 +6,16 @@
 // import map-specific style
 @import 'map';
 
+@import 'databox';
+
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
 }
 
 .content-wrapper {
@@ -40,7 +48,15 @@ header {
   grid-row: 2/4;
 }
 
+p {
+  font-size: 13px;
+}
+
 h1 {
-  font-family: sans-serif;
-  font-size: 24px;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
 }
