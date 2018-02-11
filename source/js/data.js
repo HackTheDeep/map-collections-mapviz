@@ -10,21 +10,61 @@ var rangeStart = 1880;
 var rangeEnd = rangeStart + 9;
 var ocean = 70;
 
-var dataBox = document.getElementById('dataBody');
+//updates text & location of slider year
+var updateSelectedYear = function(year, percent) {
+  var yearLabel = document.getElementById('selectedDecade');
+  yearLabel.innerHTML = year;
+  if (percent >= 75) percent -= 2;
+  else if (percent >= 30) percent -= 1;
+  yearLabel.style.marginLeft = percent + '%';
+}
 
-data.forEach(function(elem){
-  var newElem = document.createElement('li');
-  newElem.innerHTML = elem.name;
-  newElem.className = elem.type;
-  dataBox.appendChild(newElem);
-});
+// init set up for slider
+var setUpSlider = function(){
+  var slider = document.getElementsByClassName('slidecontainer')[0];
+  var numTicks = Math.ceil((new Date().getFullYear() - rangeStart)/10);
+  var dataList = document.createElement('datalist');
 
-var dataTitle = document.getElementById('dataTitle');
+  for(var i = 0; i < numTicks; i++) {
+    var tick = document.createElement('option');
+    var year = rangeStart + (10 * i)
+    tick.value = year;
+    dataList.appendChild(tick);
+  }
 
-var dateRange = document.createElement('p');
-dateRange.innerHTML = 'Date range: ' + rangeStart + '-' + rangeEnd;
-dataTitle.appendChild(dateRange);
+  slider.appendChild(dataList);
 
-var oceanTemp = document.createElement('p');
-oceanTemp.innerHTML = 'Ave. Ocean Temperature: ' + ocean;
-dataTitle.appendChild(oceanTemp);
+  updateSelectedYear(rangeStart, 0);
+}
+
+// init set up for data box
+var setUpDataBox = function() {
+  var dataBox = document.getElementById('dataBody');
+
+  data.forEach(function(elem){
+    var newElem = document.createElement('li');
+    newElem.innerHTML = elem.name;
+    newElem.className = elem.type;
+    dataBox.appendChild(newElem);
+  });
+
+  var dataTitle = document.getElementById('dataTitle');
+
+  var dateRange = document.createElement('p');
+  dateRange.innerHTML = 'Date range: ' + rangeStart + '-' + rangeEnd;
+  dataTitle.appendChild(dateRange);
+
+  var oceanTemp = document.createElement('p');
+  oceanTemp.innerHTML = 'Ave. Ocean Temperature: ' + ocean;
+  dataTitle.appendChild(oceanTemp);
+}
+
+setUpSlider();
+setUpDataBox();
+
+document.getElementById('decadePicker').addEventListener('change', function(e){
+  var selectedYear = rangeStart + +e.target.value;
+  updateSelectedYear(selectedYear, e.target.value);
+})
+
+

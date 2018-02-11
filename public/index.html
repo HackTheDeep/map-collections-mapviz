@@ -16,6 +16,10 @@
       <header>
         <h1 class="title">AMNH Collections Mapper</h1>
       </header>
+      <div class="slidecontainer">
+        <span id="selectedDecade"></span>
+        <input type="range" min="0" max="100" value="0" class="slider" step='10' id="decadePicker">
+      </div>
 
       <!-- mount the map here (whether d3, react, leaflet, mapbox.gl, etc.) -->
       <div id="map"></div>
