@@ -14,19 +14,19 @@ Collaboration with the following teams/repos:
 - A second approach taken, for tables that had lat/lng fields already, was to load into a PostGIS-enabled database and use PostGIS SQL spatial functions to store as a "geometry" data type, with encoded coordinate reference system.  
 
 ####  Technologies Applied  
--  Frontend Map Stack  
+-  Frontend Map Stack    
   - Mapping Libraries
-     - **Python jupyter** notebook (with *cartopy* library) for prototyping, inspecting the geographic data.
-     - **Leaflet.js**  
-     - **Mapboxgl.js**  
-     - **D3.js** for thematic mapping of collections data and information visualizations accompanying web map.
-   - Basemap (tile server)
+    - **Python jupyter** notebook (with *cartopy* library) for prototyping, inspecting the geographic data.
+    - **Leaflet.js**  
+    - **Mapboxgl.js**  
+    - **D3.js** for thematic mapping of collections data and information visualizations accompanying web map.
+    - Basemap (tile server)
     - Used Mapbox vector tile service for simplicity, so that we would not have to spin up our own tile server.
 - Geospatial processing  
    - **Google Maps Geocoding API** - used for...geocoding
    - **Turf.js** (can be used in Node.js or in dynamically in the browser)  
    - **PostGIS** (spatial extension for PostgreSQL) - used in development for converting lng/lat fields into geographic points  
-   - **GDAL** - using the postgis driver to output geojson file.  [See here for makefile](https://github.com/HackTheDeep/map-collections-geocoding/blob/master/make-pipeline/Makefile).  
+   - **GDAL/OGR2OGR** - using the postgis driver to output geojson file.  [See here for makefile](https://github.com/HackTheDeep/map-collections-geocoding/blob/master/make-pipeline/Makefile).  
 
 #### Challenges
 - Defining "regions" on which to sort/filter the collections data on the map.  The data given has various scales of geographic detail.  Cartographically decisions need to be made about what constitutes a region.  Do we use ecoregions / natural areas, or do you use political boundaries (countries) because that is convenient given the data detail?  
