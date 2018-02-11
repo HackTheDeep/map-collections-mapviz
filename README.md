@@ -30,15 +30,18 @@ Collaboration with the following teams/repos:
 
 #### Challenges
 - Defining "regions" on which to sort/filter the collections data on the map.  The data given has various scales of geographic detail.  Cartographically decisions need to be made about what constitutes a region.  Do we use ecoregions / natural areas, or do you use political boundaries (countries) because that is convenient given the data detail?  
+- From the UI, when showing the map, how to represent the points that do not have geographic coordinates?
 
 #### Successes  
-
+- Geocoded ~45k collection records  
+- Represented the geocoded collections visually using a variety of mapping libraries.  
 ####  Future Paths  
 - Develop an interactive frontend application to explore collections.  This might mean using a view framework like React with a state-management tool so that the interactivity on the map & accompanying graphs can be linked.
 - Develop specific thematic maps / cartography to tell various stories about the collections (themed by type of collection, taxonomic names, year of discover, etc.)  
 - Integrate external datasets to provide context about the spatial distribution of collections records.  Examples:  
  - [WWF's Marine and Terrestrial Ecoregions](https://www.worldwildlife.org/pages/conservation-science-data-and-tools)  
- - [NOAA Sea Surface Temperatures](https://www.nodc.noaa.gov/General/temperature.html)
+ - [NOAA Sea Surface Temperatures](https://www.nodc.noaa.gov/General/temperature.html)  
+- May want to run a GIS server to feed tiled datasets (for custom basemap, external datasets) to the collection mapper/viewer frontend application.
 
 
 #### Running Locally  
