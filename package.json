@@ -1,0 +1,42 @@
+{
+  "name": "amnh-map-collections",
+  "version": "0.0.1",
+  "description": "Map to explore American Museum of Natural History's collections",
+  "main": "source/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackTheDeep/map-collections-mapviz.git"
+  },
+  "keywords": [
+    "d3v4"
+  ],
+  "author": "Brandyn Friedly <brandyn.friedly@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackTheDeep/map-collections-mapviz.git/issues"
+  },
+  "dependencies": {
+    "d3": "^4.13.0",
+    "turf": "^3.0.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-loader": "^1.9.0",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "standard": "^10.0.3",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

@@ -1,0 +1,25 @@
+@import 'reset';
+
+// import variables
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  width: 100vw;
+  margin: 0 auto; // align center
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  border: 5px solid $amnh-blue;
+}
+
+#map  {
+  height: 500px;
+  width: 600px;
+  background-color: $amnh-blue;
+}
