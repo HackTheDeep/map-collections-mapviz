@@ -1,12 +1,14 @@
 //data magically comes in from wherever it does.
-var data = [{name: 'thing 1', type: 'mammal'},
-{name: 'thing 2', type: 'bird'},
-{name: 'thing 3', type: 'mammal'},
-{name: 'thing 4', type: 'reptile'},
-{name: 'thing 5', type: 'invertebrate'},
-{name: 'thing 6', type: 'fish'}];
+                            
+var data = [
+{name: 'Cymatiidae Cymatiidae biplex', type: 'invertebrate', year: 1852},
+{name: 'Mytiloidae Perna viridis', type: 'invertebrate', year: 1758},
+{name: 'Arcidae Arca crenata', type: 'invertebrate', year: null},
+{name: 'Megapodiidae Megapodius eremita', type: 'bird'},
+{name: 'Ursidae Ursus maritimus', type: 'mammal'},
+{name: 'Hydrophus Torquatus diadema', type: 'reptile'},
 
-var rangeStart = 1880;
+var rangeStart = 1700;
 var rangeEnd = rangeStart + 9;
 var ocean = 70;
 
@@ -34,7 +36,7 @@ var setUpSlider = function(){
 
   slider.appendChild(dataList);
 
-  updateSelectedYear(rangeStart, 0);
+  updateSelectedYear(1750, 0);
 }
 
 // init set up for data box
@@ -51,7 +53,7 @@ var setUpDataBox = function() {
   var dataTitle = document.getElementById('dataTitle');
 
   var dateRange = document.createElement('p');
-  dateRange.innerHTML = 'Date range: ' + rangeStart + '-' + rangeEnd;
+  dateRange.innerHTML = 'Date range: ' + 1750 + '-' + 1759;
   dataTitle.appendChild(dateRange);
 
   var oceanTemp = document.createElement('p');
