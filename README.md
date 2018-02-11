@@ -7,6 +7,12 @@ Collaboration with the following teams/repos:
 -  [MapTheCollections.Collection-Validator](https://github.com/HackTheDeep/MapTheCollections.Collection-Validator)
 - [map-collections-data-shamwow](https://github.com/HackTheDeep/map-collections-data-shamwow)  
 
+**Map Visualization Team**  
+- [Beckylee Dell](https://github.com/becks25)
+- [Emma Jablonski](https://github.com/emmjab)
+- [Ana Malagon](https://github.com/atmalagon)  
+- [Brandyn Friedly](https://github.com/bfreeds)  
+
 ####  Approaches  
 - Initial approach was to create an interactive web map application to show the cleaned collections dataset.  Frontend assumed cleaned collections data would be fed from an api (backend team created a custom data api for this purpose).  
 
@@ -53,7 +59,7 @@ $ npm --version # should be 5.2 or greater
 ```
 2. Clone the repository  
 ```shell
-git clone $ https://github.com/HackTheDeep/map-collections-mapviz2.git  
+git clone $ https://github.com/HackTheDeep/map-collections-mapviz.git  
 # cd into the repository
 $ cd map-collections-mapviz
 ```  
