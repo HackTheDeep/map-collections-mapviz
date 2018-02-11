@@ -1,20 +1,43 @@
-#dataBox{
+#dataBox {
 	position: absolute;
-	bottom: 2vw;
-	left: 2vh;
-	width: 20vw;
-	height: 30vh;
+	bottom: 2%;
+	left: 2%;
+	width: 20%;
+	height: 30%;
 	background-color: white;
 	z-index: 400;
 	border: 1px solid black;
-	overflow: hidden;
 	padding: 1%;
 
-	#dataTitle{
+	#dataTitle {
 		border-bottom: 1px solid black;
 	}
 
-	#dataBody{
-		overflow-y: scroll;
+	#dataBody {
+		overflow-y: auto;
+		height: 95%;
+
+		li {
+			padding: 1% 2%;
+			margin: 2%;
+			border-left: 3px solid;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			&.mammal {
+				border-color: $mammal-red;
+			}
+			&.bird {
+				border-color: $bird-purple;
+			}
+			&.reptile {
+				border-color: $reptile-green;
+			}
+			&.fish {
+				border-color: $fish-blue;
+			}
+			&.invertebrate {
+				border-color: $bug-gray;
+			}
+		}
 	}
 }

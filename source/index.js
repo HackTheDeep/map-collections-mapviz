@@ -5,6 +5,7 @@ import './styles/main.scss'
 import d3 from 'd3'  // information visualization
 import turf from 'turf' //geospatial processing
 import map from './js/map'
+import data from './js/data'
 
 // have webpack bundle geojson for testing purposes
 // should come from an api in production
