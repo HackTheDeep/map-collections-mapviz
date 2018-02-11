@@ -14,6 +14,11 @@ module.exports = {
     open: true,
     hot: true
   },
+  resolve: {
+    alias: {
+      Leaflet: path.resolve(__dirname, 'node_modules/leaflet/dist')
+    }
+  },
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
@@ -22,7 +27,7 @@ module.exports = {
     rules: [
       // styles
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           'style-loader',
           'css-loader',
