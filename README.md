@@ -36,11 +36,12 @@ Collaboration with the following teams/repos:
 - Geocoded ~45k collection records  
 - Represented the geocoded collections visually using a variety of mapping libraries.  
 ####  Future Paths  
+- Convert from a excel-based data storage/management to a collections database, with constraints to encourage/enforce ongoing data quality & consistency.
 - Develop an interactive frontend application to explore collections.  This might mean using a view framework like React with a state-management tool so that the interactivity on the map & accompanying graphs can be linked.
 - Develop specific thematic maps / cartography to tell various stories about the collections (themed by type of collection, taxonomic names, year of discover, etc.)  
 - Integrate external datasets to provide context about the spatial distribution of collections records.  Examples:  
- - [WWF's Marine and Terrestrial Ecoregions](https://www.worldwildlife.org/pages/conservation-science-data-and-tools)  
- - [NOAA Sea Surface Temperatures](https://www.nodc.noaa.gov/General/temperature.html)  
+   - [WWF's Marine and Terrestrial Ecoregions](https://www.worldwildlife.org/pages/conservation-science-data-and-tools)  
+   - [NOAA Sea Surface Temperatures](https://www.nodc.noaa.gov/General/temperature.html)  
 - May want to run a GIS server to feed tiled datasets (for custom basemap, external datasets) to the collection mapper/viewer frontend application.
 
 
