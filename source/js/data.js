@@ -1,10 +1,9 @@
 //data magically comes in from wherever it does.
 var data = [{name: 'thing 1', type: 'mammal'},
-{name: 'thing 2', type: 'bird'},
-{name: 'thing 3', type: 'mammal'},
-{name: 'thing 4', type: 'reptile'},
-{name: 'thing 5', type: 'invertebrate'},
-{name: 'thing 6', type: 'fish'}];
+{name: 'Ornithurae', type: 'bird'},
+{name: 'Squamata', type: 'reptile'},
+{name: 'thing', type: 'invertebrate'},
+{name: 'Chordata', type: 'fish'}];
 
 var rangeStart = 1880;
 var rangeEnd = rangeStart + 9;
