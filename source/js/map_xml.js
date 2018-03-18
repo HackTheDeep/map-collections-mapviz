@@ -1,6 +1,6 @@
 import * as L from 'leaflet'
 import 'Leaflet/leaflet.css'
-
+// instantiate a Leaflet map instance
 var map = L.map('map', {
   minZoom: 1,
   maxZoom: 13
